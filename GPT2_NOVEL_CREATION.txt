@@ -1,0 +1,8 @@
+!git clone https://github.com/tanreinama/gpt2-japanese
+%cd gpt2-japanese
+!pip install -r requirements.txt
+
+!wget https://www.nama.ne.jp/models/gpt2ja-medium.tar.bz2
+!tar xvfj gpt2ja-medium.tar.bz2
+
+!python gpt2-generate.py --model gpt2ja-medium --context="hello"
